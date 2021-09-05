@@ -11,7 +11,7 @@ class RestauranCard extends HTMLElement {
     <picture class="restaurant-image">
         <source class="lazyload" data-srcset="https://restaurant-api.dicoding.dev/images/large/${this._restaurant.pictureId}" media="(min-width: 992px)">
         <source class="lazyload" data-srcset="https://restaurant-api.dicoding.dev/images/medium/${this._restaurant.pictureId}" media="(min-width: 768px)">
-        <img class="lazyload" data-src="https://restaurant-api.dicoding.dev/images/small/${this._restaurant.pictureId}" alt="Some picture">
+        <img class="lazyload" data-src="https://restaurant-api.dicoding.dev/images/small/${this._restaurant.pictureId}" alt="${this._restaurant.name}">
     </picture>
     <div class="restaurant-info">
         <h3 tabindex="0" class="restaurant-info--name">
