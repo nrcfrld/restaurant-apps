@@ -197,17 +197,23 @@ footer {
         height: 245px;
         object-fit: cover;
         background-color: #e6eaec;
+        line-height: 245px;
+        text-align: center;
       }
     }
 
     &-info {
       padding: 0.75em 1em;
 
-      &--name a {
-        color: #1a202c;
+      &--name {
+        font-size: 20px;
+        a {
+          color: #1a202c;
+          padding: 10px 0;
 
-        &:hover {
-          color: #f8bc06;
+          &:hover {
+            color: #f8bc06;
+          }
         }
       }
 

@@ -30,9 +30,9 @@ const createRestaurantDetail = (restaurant) => {
     <div class="restaurant-detail">
       <div class="restaurant-detail-thumbnail">
         <picture>
-          <source class="restaurant-image lazyload" data-srcset="https://restaurant-api.dicoding.dev/images/large/${restaurant.pictureId}" media="(min-width: 992px)">
-          <source class="restaurant-image lazyload" data-srcset="https://restaurant-api.dicoding.dev/images/medium/${restaurant.pictureId}" media="(min-width: 768px)">
-          <img class="restaurant-image lazyload" data-src="https://restaurant-api.dicoding.dev/images/small/${restaurant.pictureId}" alt="Some picture">
+          <source class="lazyload" data-srcset="https://restaurant-api.dicoding.dev/images/large/${restaurant.pictureId}" media="(min-width: 992px)">
+          <source class="lazyload" data-srcset="https://restaurant-api.dicoding.dev/images/medium/${restaurant.pictureId}" media="(min-width: 768px)">
+          <img class="restaurant-image lazyload" data-src="https://restaurant-api.dicoding.dev/images/small/${restaurant.pictureId}" alt="${restaurant.name}">
         </picture>
       </div>
       <div class="restaurant-detail--info">
